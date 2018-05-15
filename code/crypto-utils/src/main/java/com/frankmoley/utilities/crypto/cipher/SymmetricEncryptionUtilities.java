@@ -10,6 +10,7 @@ import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 
 /**
+ * Utility class for working with Symmetric ciphers
  * @author Frank P. Moley III.
  */
 public class SymmetricEncryptionUtilities {
@@ -22,6 +23,10 @@ public class SymmetricEncryptionUtilities {
         super();
     }
 
+    /**
+     * Gets a singleton instance of the SymmetricEncryptionUtilities
+     * @return the singleton instance
+     */
     public static SymmetricEncryptionUtilities getInstance(){
         if(null==instance){
             synchronized (SymmetricEncryptionUtilities.class){
@@ -79,6 +84,13 @@ public class SymmetricEncryptionUtilities {
         }
     }
 
+    /**
+     * Performs AES decryption using a CBC mode with PKCS5Padding for the blocks
+     * @param secretKey the secret key to be used for the decryption operation
+     * @param initializationVector the initialization vector originally used for the CBC mode
+     * @param cipherText the bytes to decrypt
+     * @return the plain text string
+     */
     public String performAesDecryption(SecretKey secretKey, byte[] initializationVector, byte[] cipherText){
         try{
             Cipher cipher = Cipher.getInstance(AES_CIPHER_ALGORITHM);
