@@ -1,7 +1,6 @@
 package com.frankmoley.utilities.crypto.cipher;
 
 import org.junit.jupiter.api.Test;
-import org.relaxng.datatype.Datatype;
 
 import javax.xml.bind.DatatypeConverter;
 import java.security.KeyFactory;
@@ -9,7 +8,6 @@ import java.security.KeyPair;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.security.spec.PKCS8EncodedKeySpec;
-import java.security.spec.RSAPrivateKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
 import static org.junit.jupiter.api.Assertions.*;
