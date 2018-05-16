@@ -42,7 +42,7 @@ public class SymmetricEncryptionUtilities {
      * Generates a AES 256 bit key
      * @return the SecretKey
      */
-    public SecretKey getAesKey(){
+    public SecretKey getAESKey(){
         int keySize = 256;
         try {
             SecureRandom secureRandom = new SecureRandom();
@@ -73,7 +73,7 @@ public class SymmetricEncryptionUtilities {
      * @param plainText the String to encrypt
      * @return the cipher text bytes
      */
-    public byte[] performAesEncryption(SecretKey secretKey, byte[] initializationVector, String plainText){
+    public byte[] performAESEncryption(SecretKey secretKey, byte[] initializationVector, String plainText){
         try {
             Cipher cipher = Cipher.getInstance(AES_CIPHER_ALGORITHM);
             IvParameterSpec ivParameterSpec = new IvParameterSpec(initializationVector);
@@ -91,7 +91,7 @@ public class SymmetricEncryptionUtilities {
      * @param cipherText the bytes to decrypt
      * @return the plain text string
      */
-    public String performAesDecryption(SecretKey secretKey, byte[] initializationVector, byte[] cipherText){
+    public String performAESDecryption(SecretKey secretKey, byte[] initializationVector, byte[] cipherText){
         try{
             Cipher cipher = Cipher.getInstance(AES_CIPHER_ALGORITHM);
             IvParameterSpec ivParameterSpec = new IvParameterSpec(initializationVector);

@@ -28,8 +28,8 @@ class SymmetricEncryptionUtilitiesTest {
     }
 
     @Test
-    void getAesKey() {
-        SecretKey secretKey = SymmetricEncryptionUtilities.getInstance().getAesKey();
+    void getAESKey() {
+        SecretKey secretKey = SymmetricEncryptionUtilities.getInstance().getAESKey();
         assertNotNull(secretKey);
     }
 
@@ -40,16 +40,16 @@ class SymmetricEncryptionUtilitiesTest {
     }
 
     @Test
-    void performAesEncryption() {
+    void performAESEncryption() {
         SecretKey secretKey = new SecretKeySpec(SECRET_KEY_BYTES, 0, SECRET_KEY_BYTES.length, AES);
-        byte[] cipherText = SymmetricEncryptionUtilities.getInstance().performAesEncryption(secretKey, INITIALIZATION_VECTOR, PLAIN_TEXT);
+        byte[] cipherText = SymmetricEncryptionUtilities.getInstance().performAESEncryption(secretKey, INITIALIZATION_VECTOR, PLAIN_TEXT);
         assertNotNull(cipherText);
     }
 
     @Test
-    void performAesDecryption() {
+    void performAESDecryption() {
         SecretKey secretKey = new SecretKeySpec(SECRET_KEY_BYTES, 0, SECRET_KEY_BYTES.length, AES);
-        String plainText = SymmetricEncryptionUtilities.getInstance().performAesDecryption(secretKey, INITIALIZATION_VECTOR, CIPHER_TEXT_BYTES);
+        String plainText = SymmetricEncryptionUtilities.getInstance().performAESDecryption(secretKey, INITIALIZATION_VECTOR, CIPHER_TEXT_BYTES);
         assertEquals(PLAIN_TEXT, plainText);
     }
 }
