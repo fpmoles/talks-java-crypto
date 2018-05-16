@@ -24,7 +24,7 @@ public class AsymmetricEncryptionUtilities {
      */
     public static AsymmetricEncryptionUtilities getInstance(){
         if(null==instance){
-            synchronized (SymmetricEncryptionUtilities.class){
+            synchronized (AsymmetricEncryptionUtilities.class){
                 if(null==instance) {
                     instance = new AsymmetricEncryptionUtilities();
                 }
