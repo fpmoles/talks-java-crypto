@@ -1,7 +1,5 @@
 package com.frankmoley.utilities.crypto.cipher;
 
-import org.junit.jupiter.api.Test;
-
 import javax.xml.bind.DatatypeConverter;
 import java.security.KeyFactory;
 import java.security.KeyPair;
@@ -10,7 +8,11 @@ import java.security.PublicKey;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertSame;
 
 /**
  * @author Frank P. Moley III.

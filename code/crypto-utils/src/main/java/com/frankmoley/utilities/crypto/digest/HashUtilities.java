@@ -1,10 +1,10 @@
 package com.frankmoley.utilities.crypto.digest;
 
-import com.frankmoley.utilities.crypto.exception.ProviderBasedException;
-import org.mindrot.jbcrypt.BCrypt;
-
 import java.io.ByteArrayOutputStream;
 import java.security.MessageDigest;
+
+import com.frankmoley.utilities.crypto.exception.ProviderBasedException;
+import org.mindrot.jbcrypt.BCrypt;
 
 /**
  * @author Frank P. Moley III.

@@ -1,12 +1,12 @@
 package com.frankmoley.utilities.crypto.cipher;
 
-import com.frankmoley.utilities.crypto.exception.ProviderBasedException;
-
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
 import java.security.SecureRandom;
+
+import com.frankmoley.utilities.crypto.exception.ProviderBasedException;
 
 /**
  * Utility class for working with Symmetric ciphers

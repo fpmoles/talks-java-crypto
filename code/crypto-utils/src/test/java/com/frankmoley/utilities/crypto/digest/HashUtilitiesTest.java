@@ -1,13 +1,15 @@
 package com.frankmoley.utilities.crypto.digest;
 
-import org.junit.jupiter.api.Test;
-
 import javax.xml.bind.DatatypeConverter;
-import javax.xml.crypto.Data;
 import java.security.SecureRandom;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertSame;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * @author Frank P. Moley III.

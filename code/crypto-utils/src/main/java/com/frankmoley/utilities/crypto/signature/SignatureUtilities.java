@@ -1,10 +1,10 @@
 package com.frankmoley.utilities.crypto.signature;
 
-import com.frankmoley.utilities.crypto.exception.ProviderBasedException;
-
 import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.security.Signature;
+
+import com.frankmoley.utilities.crypto.exception.ProviderBasedException;
 
 /**
  * @author Frank P. Moley III.

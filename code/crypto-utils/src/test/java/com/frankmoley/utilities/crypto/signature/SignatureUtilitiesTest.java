@@ -1,18 +1,17 @@
 package com.frankmoley.utilities.crypto.signature;
 
-import org.junit.jupiter.api.Test;
-import org.relaxng.datatype.Datatype;
-
 import javax.xml.bind.DatatypeConverter;
-
 import java.security.KeyFactory;
 import java.security.PrivateKey;
 import java.security.PublicKey;
-import java.security.SecureRandom;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertSame;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * @author Frank P. Moley III.
