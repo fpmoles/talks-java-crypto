@@ -8,8 +8,8 @@ In this talk we will start our discussion with cryptography and first rule of cr
 By the time you leave this talk, you should have a basic understanding of the java crypto packages and basic uses cases.
 
 ## Presented at
-May 2018 Kansas City Java User Group
-2018 Kansas City Developers Conference
+* May 2018 Kansas City Java User Group
+* 2018 Kansas City Developers Conference
 
 ## Last Updated
 May 16, 2018
