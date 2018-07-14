@@ -9,6 +9,7 @@ By the time you leave this talk, you should have a basic understanding of the ja
 
 ## Presented at
 May 2018 Kansas City Java User Group
+2018 Kansas City Developers Conference
 
 ## Last Updated
 May 16, 2018
